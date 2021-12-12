@@ -45,10 +45,13 @@ class TableControllerFirst: UITableViewController {
         
         let keyLetter = firstCharFriends[indexPath.section]
         let arrayFriendsRows = dictionaryFriends[keyLetter]
+        
+        
     
         // MARK: Name
     
         let friends1 = arrayFriendsRows?[indexPath.row]
+        cell.numberOfItems.text = String(describing: (friends1?.pictureCollection.count)!)
                 cell.cellFriends.text = friends1?.name
                 if cell.cellFriends.text == "" {
                     cell.cellFriends.text = "имя отсутствует"

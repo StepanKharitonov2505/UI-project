@@ -13,11 +13,13 @@ class UserFriendly{
     var name: String
     var surname: String
     var imagename: PhotoArray
+    var pictureCollection: [PhotoArray?]
     
-    init(name: String,surname: String ,imagename: PhotoArray) {
+    init(name: String,surname: String ,imagename: PhotoArray, pictureCollection: [PhotoArray]) {
         self.name = name
         self.surname = surname
         self.imagename = imagename
+        self.pictureCollection = pictureCollection
     }
 }
 
