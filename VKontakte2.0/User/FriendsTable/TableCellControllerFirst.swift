@@ -9,6 +9,7 @@ import UIKit
 
 class TableCellControllerFirst: UITableViewCell {
 
+    @IBOutlet weak var numberOfItems: UILabel!
     @IBOutlet weak var cellSurname: UILabel!
     @IBOutlet weak var myGradientView: UIView!
     @IBOutlet weak var photoFriends: UIImageView!

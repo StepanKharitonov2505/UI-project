@@ -15,18 +15,34 @@ class UserRepository {
         }
     
     func setupArray() {
-        let user1 = UserFriendly(name: "Murana",surname: "Satomi" ,imagename: PhotoArray.init(namePhotoUser: "Murana", isLikedPhoto: false))
-        let user2 = UserFriendly(name: "Ирелия",surname: "Зан" ,imagename: PhotoArray.init(namePhotoUser: "Ирелия", isLikedPhoto: false))
-        let user3 = UserFriendly(name: "Дэниэл",surname: "Крейг" ,imagename: PhotoArray.init(namePhotoUser: "Дэниэл", isLikedPhoto: false))
-        let user4 = UserFriendly(name: "Мэтью",surname: "Макконахи" ,imagename: PhotoArray.init(namePhotoUser: "Мэтью", isLikedPhoto: false))
-        let user5 = UserFriendly(name: "Алиса",surname: "Сигман" ,imagename: PhotoArray.init(namePhotoUser: "Алиса", isLikedPhoto: false))
-        let user6 = UserFriendly(name: "Альберт",surname: "Вачовски" ,imagename: PhotoArray.init(namePhotoUser: "Альберт", isLikedPhoto: false))
-        let user7 = UserFriendly(name: "Скарлетт",surname: "Йоханссон" ,imagename: PhotoArray.init(namePhotoUser: "Скарлетт", isLikedPhoto: false))
-        let user8 = UserFriendly(name: "Трандуил",surname: "Дориат" ,imagename: PhotoArray.init(namePhotoUser: "Трандуил", isLikedPhoto: false))
-        let user9 = UserFriendly(name: "Александр",surname: "Иванов-Крамской" ,imagename: PhotoArray.init(namePhotoUser: "Александр", isLikedPhoto: false))
-        let user10 = UserFriendly(name: "Фердинад",surname: "Карулли" ,imagename: PhotoArray.init(namePhotoUser: "Фердинанд", isLikedPhoto: false))
-        let user11 = UserFriendly(name: "Асуна",surname: "Юки" ,imagename: PhotoArray.init(namePhotoUser: "Асуна", isLikedPhoto: false))
-        let user12 = UserFriendly(name: "Дензел",surname: "Вашингтон" ,imagename: PhotoArray.init(namePhotoUser: "Дэнзэл", isLikedPhoto: false))
+        let user1 = UserFriendly(name: "Murana",surname: "Satomi" ,imagename: PhotoArray.init(namePhotoUser: "Murana", isLikedPhoto: false), pictureCollection: [
+            PhotoArray(namePhotoUser: "satomi1", isLikedPhoto: false),
+            PhotoArray(namePhotoUser: "satomi2", isLikedPhoto: false),
+            PhotoArray(namePhotoUser: "satomi3", isLikedPhoto: false),
+            PhotoArray(namePhotoUser: "satomi4", isLikedPhoto: false),
+            PhotoArray(namePhotoUser: "satomi5", isLikedPhoto: false)])
+        let user2 = UserFriendly(name: "Ирелия",surname: "Зан" ,imagename: PhotoArray.init(namePhotoUser: "Ирелия", isLikedPhoto: false), pictureCollection: [
+            PhotoArray(namePhotoUser: "ирелия1", isLikedPhoto: false),
+            PhotoArray(namePhotoUser: "ирелия2", isLikedPhoto: false),
+            PhotoArray(namePhotoUser: "ирелия3", isLikedPhoto: false)])
+        let user3 = UserFriendly(name: "Дэниэл",surname: "Крейг" ,imagename: PhotoArray.init(namePhotoUser: "Дэниэл", isLikedPhoto: false), pictureCollection: [
+            PhotoArray(namePhotoUser: "крейг1", isLikedPhoto: false),
+            PhotoArray(namePhotoUser: "крейг2", isLikedPhoto: false),
+            PhotoArray(namePhotoUser: "крейг3", isLikedPhoto: false)])
+        let user4 = UserFriendly(name: "Мэтью",surname: "Макконахи" ,imagename: PhotoArray.init(namePhotoUser: "Мэтью", isLikedPhoto: false), pictureCollection: [
+            PhotoArray(namePhotoUser: "мэтью1", isLikedPhoto: false),
+            PhotoArray(namePhotoUser: "мэтью2", isLikedPhoto: false),
+            PhotoArray(namePhotoUser: "мэтью3", isLikedPhoto: false),
+            PhotoArray(namePhotoUser: "мэтью4", isLikedPhoto: false),
+            PhotoArray(namePhotoUser: "мэтью5", isLikedPhoto: false)])
+        let user5 = UserFriendly(name: "Алиса",surname: "Сигман" ,imagename: PhotoArray.init(namePhotoUser: "Алиса", isLikedPhoto: false), pictureCollection: [])
+        let user6 = UserFriendly(name: "Альберт",surname: "Вачовски" ,imagename: PhotoArray.init(namePhotoUser: "Альберт", isLikedPhoto: false), pictureCollection: [])
+        let user7 = UserFriendly(name: "Скарлетт",surname: "Йоханссон" ,imagename: PhotoArray.init(namePhotoUser: "Скарлетт", isLikedPhoto: false), pictureCollection: [])
+        let user8 = UserFriendly(name: "Трандуил",surname: "Дориат" ,imagename: PhotoArray.init(namePhotoUser: "Трандуил", isLikedPhoto: false), pictureCollection: [])
+        let user9 = UserFriendly(name: "Александр",surname: "Иванов-Крамской" ,imagename: PhotoArray.init(namePhotoUser: "Александр", isLikedPhoto: false), pictureCollection: [])
+        let user10 = UserFriendly(name: "Фердинад",surname: "Карулли" ,imagename: PhotoArray.init(namePhotoUser: "Фердинанд", isLikedPhoto: false), pictureCollection: [])
+        let user11 = UserFriendly(name: "Асуна",surname: "Юки" ,imagename: PhotoArray.init(namePhotoUser: "Асуна", isLikedPhoto: false), pictureCollection: [])
+        let user12 = UserFriendly(name: "Дензел",surname: "Вашингтон" ,imagename: PhotoArray.init(namePhotoUser: "Дэнзэл", isLikedPhoto: false), pictureCollection: [])
         
         userBlock.append(user1)
         userBlock.append(user2)

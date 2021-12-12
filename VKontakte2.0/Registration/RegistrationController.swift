@@ -31,7 +31,7 @@ class RegistrationController: UIViewController {
             self.view.addSubview(visualEffectView)
             self.view.sendSubviewToBack(visualEffectView)
             self.visualEffectView = visualEffectView
-        visualEffectView.alpha = 0.95
+        visualEffectView.alpha = 0.9
     }
     
     func dismissEnd() {

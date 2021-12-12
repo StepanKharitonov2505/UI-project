@@ -17,6 +17,10 @@
 		1D4B6835272FED8400ACDABA /* VKontakte2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B6834272FED8400ACDABA /* VKontakte2_0UITests.swift */; };
 		1D4B6837272FED8400ACDABA /* VKontakte2_0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B6836272FED8400ACDABA /* VKontakte2_0UITestsLaunchTests.swift */; };
 		1D4B6844272FEDC700ACDABA /* LoginFromController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B6843272FEDC700ACDABA /* LoginFromController.swift */; };
+		1D4D2AD92762707F00A5AE78 /* UserPhotoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D2AD82762707F00A5AE78 /* UserPhotoCollection.swift */; };
+		1D4D2ADB2762709D00A5AE78 /* PhotoUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D2ADA2762709D00A5AE78 /* PhotoUserViewController.swift */; };
+		1D4D2ADD2762716600A5AE78 /* UserPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D2ADC2762716600A5AE78 /* UserPhotoCell.swift */; };
+		1D4D2AE02763A74900A5AE78 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D2ADF2763A74900A5AE78 /* Session.swift */; };
 		1D5942FB274EBD3100462968 /* GroupsNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5942FA274EBD3100462968 /* GroupsNews.swift */; };
 		1D6745AE27458AA300D671DB /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6745AD27458AA300D671DB /* RegistrationController.swift */; };
 		1D6745B027459A9400D671DB /* RegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6745AF27459A9400D671DB /* RegistrationData.swift */; };
@@ -76,6 +80,10 @@
 		1D4B6834272FED8400ACDABA /* VKontakte2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKontakte2_0UITests.swift; sourceTree = "<group>"; };
 		1D4B6836272FED8400ACDABA /* VKontakte2_0UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKontakte2_0UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1D4B6843272FEDC700ACDABA /* LoginFromController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFromController.swift; sourceTree = "<group>"; };
+		1D4D2AD82762707F00A5AE78 /* UserPhotoCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPhotoCollection.swift; sourceTree = "<group>"; };
+		1D4D2ADA2762709D00A5AE78 /* PhotoUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUserViewController.swift; sourceTree = "<group>"; };
+		1D4D2ADC2762716600A5AE78 /* UserPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPhotoCell.swift; sourceTree = "<group>"; };
+		1D4D2ADF2763A74900A5AE78 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		1D5942FA274EBD3100462968 /* GroupsNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsNews.swift; sourceTree = "<group>"; };
 		1D6745AD27458AA300D671DB /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		1D6745AF27459A9400D671DB /* RegistrationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationData.swift; sourceTree = "<group>"; };
@@ -151,7 +159,8 @@
 		1D4B6812272FED8400ACDABA /* VKontakte2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				1DBBE1CC2756B1C8007E1A9C /* firstLoadedView */,
+				1D4D2ADE2763A71300A5AE78 /* Account */,
+				1DBBE1CC2756B1C8007E1A9C /* FirstLoadedView */,
 				1D933767274E757100EBD778 /* NewsTable */,
 				1DF925A927482E8B00061245 /* HeaderFriends */,
 				1D6745AC27458A8400D671DB /* Registration */,
@@ -184,6 +193,14 @@
 				1D4B6836272FED8400ACDABA /* VKontakte2_0UITestsLaunchTests.swift */,
 			);
 			path = VKontakte2.0UITests;
+			sourceTree = "<group>";
+		};
+		1D4D2ADE2763A71300A5AE78 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				1D4D2ADF2763A74900A5AE78 /* Session.swift */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 		1D6745AC27458A8400D671DB /* Registration */ = {
@@ -232,13 +249,13 @@
 			path = Group;
 			sourceTree = "<group>";
 		};
-		1DBBE1CC2756B1C8007E1A9C /* firstLoadedView */ = {
+		1DBBE1CC2756B1C8007E1A9C /* FirstLoadedView */ = {
 			isa = PBXGroup;
 			children = (
 				1DBBE1CD2756B1E3007E1A9C /* loadView.xib */,
 				1DBBE1CF2756B1EE007E1A9C /* loadView.swift */,
 			);
-			path = firstLoadedView;
+			path = FirstLoadedView;
 			sourceTree = "<group>";
 		};
 		1DE3B1F3273EA0BA002E8A55 /* Model */ = {
@@ -280,6 +297,9 @@
 			children = (
 				1DF373B5273AD2DD00BF4190 /* CollectionPhotoController.swift */,
 				1DF373B7273AD49100BF4190 /* PhotoCellCollection.swift */,
+				1D4D2AD82762707F00A5AE78 /* UserPhotoCollection.swift */,
+				1D4D2ADC2762716600A5AE78 /* UserPhotoCell.swift */,
+				1D4D2ADA2762709D00A5AE78 /* PhotoUserViewController.swift */,
 			);
 			path = CollectionPhoto;
 			sourceTree = "<group>";
@@ -431,7 +451,10 @@
 				1D4B6814272FED8400ACDABA /* AppDelegate.swift in Sources */,
 				1D6745B027459A9400D671DB /* RegistrationData.swift in Sources */,
 				1D93376B274E785B00EBD778 /* NewsController.swift in Sources */,
+				1D4D2ADB2762709D00A5AE78 /* PhotoUserViewController.swift in Sources */,
+				1D4D2AE02763A74900A5AE78 /* Session.swift in Sources */,
 				1D5942FB274EBD3100462968 /* GroupsNews.swift in Sources */,
+				1D4D2AD92762707F00A5AE78 /* UserPhotoCollection.swift in Sources */,
 				1DF373B2273AADCB00BF4190 /* TableCellControllerFirst.swift in Sources */,
 				1D1B23A9273F0A720058BDF4 /* GroupRepository.swift in Sources */,
 				1D7EE7AF2743F92F00C3CD08 /* PhotoArray.swift in Sources */,
@@ -443,6 +466,7 @@
 				1D6745AE27458AA300D671DB /* RegistrationController.swift in Sources */,
 				1DE3B1F2273EA0AD002E8A55 /* Group.swift in Sources */,
 				1DBA5C43273C33FC00CDF585 /* GroupsController.swift in Sources */,
+				1D4D2ADD2762716600A5AE78 /* UserPhotoCell.swift in Sources */,
 				1D4B6816272FED8400ACDABA /* SceneDelegate.swift in Sources */,
 				1DE5BEE8274FD0FB009824EB /* TipInCellAnimator.swift in Sources */,
 				1DF925AF27483E5000061245 /* HeaderFriends.swift in Sources */,

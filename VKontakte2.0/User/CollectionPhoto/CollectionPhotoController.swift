@@ -79,6 +79,14 @@ class CollectionPhotoController: UICollectionViewController {
         
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let previewVC = segue.destination as? UserPhotoCollection else {
+            return
+        }
+        let userProfile = avatarElement
+        previewVC.userElement = userProfile
+    }
 
     // MARK: IBAction
     
@@ -93,4 +101,5 @@ class CollectionPhotoController: UICollectionViewController {
         }
         
     }
+    
 }
